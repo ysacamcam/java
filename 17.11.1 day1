@@ -1,0 +1,21 @@
+package myjava;
+
+class Tax{
+	double grossIncome;
+	String state;
+	int dependents;
+	public double calcTax() {
+		return 234.55;
+}
+}
+public class source {
+	public static void main(String[] args) {
+		Tax a = new Tax();
+		a.grossIncome=50000;
+		a.dependents=2;
+		a.state="nj";
+		double yourtax=a.calcTax();
+		System.out.println("Your tax is"+yourtax);
+	}
+
+}
