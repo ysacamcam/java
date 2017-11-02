@@ -1,0 +1,36 @@
+package myjava;
+
+import myjava.Tax.pay;
+
+class Tax{
+	double grossIncome;
+	String state;
+	int dependents;
+	public double calcTax() {
+		return 234.55;
+}
+	interface pay{
+		public int a();
+	}
+}
+class apay implements pay{
+	public int a() {
+		System.out.println("aaa");
+		return 0;
+	}
+}
+class bpay implements pay{
+	public int a() {
+		System.out.println("bbbb");
+		return 0;
+	}
+}
+public class source {
+	public static void main(String[] args) {
+	apay a = new apay();
+	a.a();
+	bpay b =new bpay();
+	b.a();
+	}
+
+}
