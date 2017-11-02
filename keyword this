@@ -1,0 +1,16 @@
+package myjava;
+
+class Tax{
+	int a;
+	public Tax(int a) {
+		// TODO Auto-generated constructor stub
+		this.a=a;
+		System.out.println("a is:"+a);
+	}
+}
+
+public class source {
+	public static void main(String[] args) {	
+		Tax car= new Tax(12);
+	}
+}
