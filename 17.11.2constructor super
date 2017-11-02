@@ -1,0 +1,32 @@
+package myjava;
+
+class Tax{
+	int c;
+	public Tax() {
+		c=10;
+		System.out.println("c is:"+c);
+	}
+	 Tax(int d) {
+		 c=d;
+		System.out.println(("c int is:"+c));
+	}
+}
+class Tax2 extends Tax{
+	int c;
+	public Tax2() {
+		super(1);
+	}
+	public Tax2(int b) {
+		super(1);
+	}	
+}
+public class source {
+	public static void main(String[] args) {	
+		Tax2 a =new Tax2();
+		Tax2 b=new Tax2(1);
+		Tax c=new Tax();
+		Tax d =new Tax(1111);
+		
+	}
+
+}
