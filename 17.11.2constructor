@@ -25,3 +25,38 @@ public class source {
 	}
 
 }
+
+/////////////////////////////////////////////
+package myjava;
+
+
+class Car{
+	int grossincome,numberOfDoor;
+	String aString;
+	public Car() {
+		grossincome = 1;             // in fact , the use of constructor is to initialize the class ,
+		aString="helloworld!";       // if we don't do it ,then system auto do it by itself.
+	}
+	public void message() {
+		System.out.println("this is message function!");
+	}
+}
+class myCar extends Car{
+	String color;
+	 int speed() {
+		return 24;
+	}
+	 @Override public void message() {
+		System.out.println("this is submessage!");
+		super.message();
+	}
+}
+public class source{
+	public static void main(String[] args) {
+		myCar xiaohei=new myCar();
+		xiaohei.message();
+		System.out.println(xiaohei.aString);
+		
+	}
+	
+}
